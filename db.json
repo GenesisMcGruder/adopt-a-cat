@@ -1,0 +1,92 @@
+{
+    "cats": [
+      {
+        "id": 1,
+        "name": "Lou",
+        "img": "https://i.pinimg.com/736x/25/01/a9/2501a938a0f042a649465cfb845df348.jpg",
+        "breed": "Cinnamon Ragdoll",
+        "pottytrained": "no",
+        "age": "1",
+        "sex": "female",
+        "temperment":" calm",
+        "description": "Lou is relaxed constant companion. She will never leave your side and loves cuddles."
+      },
+      {
+        "id": 2,
+        "name": "Bobby",
+        "img": "https://www.thesprucepets.com/thmb/RnGTM5ENlWu-D4oND397jksaUCw=/1911x0/filters:no_upscale():strip_icc()/bombay-cat-full-profile-history-and-care-5202250-hero-85810f454cf84a7786e650136a10f91c.jpg",
+        "breed": "Bombay",
+        "pottytrained": "yes",
+        "age": "3",
+        "sex": "male",
+        "temperment":"recluse",
+        "description": "Bobby a quiet relcuse. He loves his space but is there for you when you need him."
+      },
+      {
+        "id": 3,
+        "name": "Mufasa",
+        "img": "https://c.stocksy.com/a/5gW400/z8/1078929.jpg",
+        "breed": "Russian Blue",
+        "pottytrained": "no",
+        "age": "1",
+        "sex": "male",
+        "temperment":"playful ",
+        "description": "Mufasa is young and playful. He ready for any adventure you take him on."  
+      },
+      {
+        "id": 4,
+        "name": "Peter",
+        "img": "https://www.catsbest.eu/wp-content/uploads//Tonkanese_shutterstock_1661671252-768x1024.jpg",
+        "breed": "Tonkinese",
+        "pottytrained": "yes",
+        "age": "5",
+        "sex": "male",
+        "temperment":"serious",
+        "description": "Peter's all business over here. He loves to play protecter of the house."
+      },
+      {
+        "id": 5,
+        "name": "Dior",
+        "img": "http://t0.gstatic.com/images?q=tbn:ANd9GcS4QBrErvukkXT_1iF-A1cH_2nWYojz4C4ivfb1aghVhJtYLMTGn2mMVapRl-kn0GjEZOYr",
+        "breed": "Korat",
+        "pottytrained": "yes",
+        "age": "2",
+        "sex": "female",
+        "temperment":"posh ",
+        "description": "Dior has style for days. She has a regal air about her and loves the finer things in life"
+      },
+      {
+        "id": 6,
+        "name": "Dexter",
+        "img": "https://www.thesprucepets.com/thmb/MigiLYeVSJcj0zkNVkJ--rALMZI=/2121x0/filters:no_upscale():strip_icc()/GettyImages-165827729-efc11c02690f457a81ef6ccbfa8eb34d.jpg",
+        "breed": "Abyssinian",
+        "pottytrained": "yes",
+        "age": "4",
+        "sex": "male",
+        "temperment":" Mischievious",
+        "description": "Dexter loves to play. He always finds himself getting into something new."
+      },
+      {
+        "id": 7,
+        "name": "Larry",
+        "img": "https://image.petmd.com/files/styles/863x625/public/2023-04/sphynx-cat.jpg",
+        "breed": "Sphynx",
+        "pottytrained": "yes",
+        "age": "2",
+        "sex": "male",
+        "temperment":"curious",
+        "description": "Larry is quiet but curious. He's never gets to close but investigates froma distance."
+      },
+      {
+        "id": 8,
+        "name": "Seb",
+        "img": "https://www.cwvet.co.uk/wp-content/uploads/2017/12/Egyptian-Mau-is-one-of-the-only-naturally-spotted-domestic-cat-breeds.png",
+        "breed": "Egyptian Mau",
+        "pottytrained": "yes",
+        "age": "6",
+        "sex": "male",
+        "temperment":"nature lover",
+        "description": "Seb loves the great outdoors. He's great cat if you want a companion to see the world with."
+      }
+    ]
+  }
