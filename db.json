@@ -9,7 +9,7 @@
         "age": "1",
         "sex": "female",
         "temperment":" calm",
-        "description": "Lou is relaxed constant companion. She will never leave your side and loves cuddles."
+        "description": "Lou is a relaxed constant companion. She will never leave your side and loves cuddles."
       },
       {
         "id": 2,
@@ -20,7 +20,7 @@
         "age": "3",
         "sex": "male",
         "temperment":"recluse",
-        "description": "Bobby a quiet relcuse. He loves his space but is there for you when you need him."
+        "description": "Bobby is a quiet relcuse. He loves his space but is there for you when you need him."
       },
       {
         "id": 3,
@@ -31,7 +31,7 @@
         "age": "1",
         "sex": "male",
         "temperment":"playful ",
-        "description": "Mufasa is young and playful. He ready for any adventure you take him on."  
+        "description": "Mufasa is young and playful. He's ready for any new adventure you take him on."  
       },
       {
         "id": 4,
@@ -42,7 +42,7 @@
         "age": "5",
         "sex": "male",
         "temperment":"serious",
-        "description": "Peter's all business over here. He loves to play protecter of the house."
+        "description": "Peter's all business over here. He loves to play protector of the house."
       },
       {
         "id": 5,
@@ -52,7 +52,7 @@
         "pottytrained": "yes",
         "age": "2",
         "sex": "female",
-        "temperment":"posh ",
+        "temperment":"posh",
         "description": "Dior has style for days. She has a regal air about her and loves the finer things in life"
       },
       {
@@ -75,7 +75,7 @@
         "age": "2",
         "sex": "male",
         "temperment":"curious",
-        "description": "Larry is quiet but curious. He's never gets to close but investigates froma distance."
+        "description": "Larry is quiet but curious. He never gets too close but investigates from a distance."
       },
       {
         "id": 8,
@@ -86,7 +86,7 @@
         "age": "6",
         "sex": "male",
         "temperment":"nature lover",
-        "description": "Seb loves the great outdoors. He's great cat if you want a companion to see the world with."
+        "description": "Seb loves the great outdoors. He's a great cat if you want a companion to see the world with."
       }
     ]
   }
