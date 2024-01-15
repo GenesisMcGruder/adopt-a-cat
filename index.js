@@ -11,7 +11,7 @@ function showOneCat(cat){
     <h2>${cat.name}</h2>
     <div> Breed: ${cat.breed}</div>
     <div> Age: ${cat.age}</div>
-    <div> Pottytrained: ${cat.pottytrained}</div>
+    <div> Housetrained: ${cat.housetrained}</div>
     <div> Sex: ${cat.sex}</div>
     <div> Temperment: ${cat.temperment}</div>
     <div> About Me: ${cat.description}</div>
