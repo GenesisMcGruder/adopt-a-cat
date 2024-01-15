@@ -1,25 +1,26 @@
 document.addEventListener("DOMContentLoaded", ()=> console.log("CONNECTED!!!"))
 
 function showOneCat(cat){
-    let card = document.createElement('li')
+    let card = document.createElement('div')
     card.className = 'card'
     card.innerHTML = `
-    <img src="${cat.img}"
-    width="500"
-    height="600">
-    <div class="content">
-    <h4> Name: ${cat.name}<h4>
-    <p> Breed: ${cat.breed}<p>
-    <p> Age: ${cat.age}<p>
-    <p> Pottytrained: ${cat.pottytrained}<p>
-    <p> Sex: ${cat.sex}<p>
-    <p> Temperment: ${cat.temperment}<p>
-    <p> About Me: ${cat.description}<p>
-    <div class="buttons">
-    <button> Adopt Me <button>
-    <div>
+    <div class="card-header card-image">
+    <img src="${cat.img}"/>
+    </div>
+    <div class="cat-card-body">
+    <h2>${cat.name}</h2>
+    <div> Breed: ${cat.breed}</div>
+    <div> Age: ${cat.age}</div>
+    <div> Pottytrained: ${cat.pottytrained}</div>
+    <div> Sex: ${cat.sex}</div>
+    <div> Temperment: ${cat.temperment}</div>
+    <div> About Me: ${cat.description}</div>
+    <div class="card-footer">
+    <button class="btn"> Adopt Me </button>
+    <button class="btn btn-outline"> Contact Seller</button>
+    </div>
     `
-    document.querySelector('#cat-adoptees').appendChild(card)
+    document.querySelector('.cat-cards-grid').appendChild(card)
 }
 
 function loadCats() {
@@ -29,3 +30,4 @@ function loadCats() {
 }
 
 loadCats();
+
