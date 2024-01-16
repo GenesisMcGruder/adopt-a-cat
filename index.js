@@ -13,11 +13,12 @@ function showOneCat(cat){
     <div> Age: ${cat.age}</div>
     <div> Housetrained: ${cat.housetrained}</div>
     <div> Sex: ${cat.sex}</div>
-    <div> Temperment: ${cat.temperment}</div>
+    <div> Temperament: ${cat.temperment}</div>
     <div> About Me: ${cat.description}</div>
     <div class="card-footer">
     <button class="btn"> Adopt Me </button>
     <button class="btn btn-outline"> Contact Seller</button>
+    <button class="like-btn"> 😻 </button>
     </div>
     `
     document.querySelector('.cat-cards-grid').appendChild(card)

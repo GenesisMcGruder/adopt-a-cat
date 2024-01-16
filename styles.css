@@ -12,7 +12,7 @@ body{
     font-size: larger;
 }
 
-.search-wrapper {
+.search-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,10 +22,6 @@ body{
 input {
     font-size: 1rem;
 }
-
-/* .hide {
-    display: none;
-} */
 
 .cat-cards-grid {
     display: grid;
@@ -89,6 +85,12 @@ input {
 
 .btn:hover, .btn:focus {
     background: hsl(200,50%,60%);
+}
+
+.like-btn{
+    background: none;
+    border: none;
+    font-size: x-large;
 }
 
 .btn.btn-outline {
