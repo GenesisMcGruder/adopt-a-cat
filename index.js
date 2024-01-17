@@ -13,14 +13,25 @@ function showOneCat(cat){
     <div> Age: ${cat.age}</div>
     <div> Housetrained: ${cat.housetrained}</div>
     <div> Sex: ${cat.sex}</div>
-    <div> Temperament: ${cat.temperment}</div>
+    <div> Temperament: ${cat.temperament}</div>
     <div> About Me: ${cat.description}</div>
     <div class="card-footer">
     <button class="btn"> Adopt Me </button>
     <button class="btn btn-outline"> Contact Seller</button>
-    <button class="like-btn"> 😻 </button>
+    <button class="like-btn"> &#128150 </button>
     </div>
     `
+    let firstEmoji = true
+    const likeBtn = card.querySelector('.like-btn')
+
+    likeBtn.addEventListener('click', (e)=>{
+        if(firstEmoji) {
+            likeBtn.innerHTML = '&#128571'
+        } else {
+            likeBtn.innerHTML = '&#128150'
+        }
+        firstEmoji = !firstEmoji
+    })
     document.querySelector('.cat-cards-grid').appendChild(card)
 }
 
@@ -29,6 +40,4 @@ function loadCats() {
     .then(res=> res.json())
     .then(catData => catData.forEach(cat=> showOneCat(cat)))
 }
-
 loadCats();
-
