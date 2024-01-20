@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", ()=> {
     loadCats();
+    searchCats();
 });
 
-
+const searchInput = document.querySelector("#search");
+const catsContainer = document.querySelector('.cat-cards-grid')
 function showOneCat(cat){
     let card = document.createElement('div')
     card.className = 'card'
@@ -45,16 +47,36 @@ function showOneCat(cat){
     contactSellerBtn.addEventListener('click', (e) =>(
         alert("Have questions? Someone will reach out with any information you might need.")
     ))
-    document.querySelector('.cat-cards-grid').appendChild(card)
+    catsContainer.appendChild(card)
 }
-
+ let cats = []
 function loadCats() {
     fetch('http://localhost:3000/catData')
     .then(res=> res.json())
     .then(catData => {
-        cats = catData.map(cat =>{
-            showOneCat(cat)
-            return {name:cat.name, breed:cat.breed, age:cat.age, housetrained:cat.housetrained, sex:cat.sex, temperament:cat.temperament}
-        });
+         cats = catData
+        catData.forEach(showOneCat);
+        //catData.forEach(cat =>showOneCat(cat));
     });
 }
+
+ 
+function searchCats() {  
+    searchInput.addEventListener("input", (e) => { 
+        const value = e.target.value.toLowerCase(); 
+        console.log(value)
+        console.log(cats)
+        catsContainer.innerHTML = ""
+         cats.forEach((cat) => 
+        { const isVisible = cat.name.toLowerCase().includes(value)
+        // cat.breed.includes(value) || 
+        // cat.age.includes(value) || 
+        // cat.sex.includes(value) || 
+        // cat.temperament.includes(value) || 
+        // cat.housetrained.includes(value)
+        if (isVisible){
+            showOneCat(cat)
+        }
+     })
+     })
+     }
