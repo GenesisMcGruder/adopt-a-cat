@@ -106,3 +106,7 @@ input {
 .btn +.btn {
     margin-left: .25rem;
 }
+
+.hide{
+    display: none;
+}

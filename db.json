@@ -35,12 +35,12 @@
       },
       {
         "id": 4,
-        "name": "Peter",
+        "name": "Mary",
         "img": "https://www.catsbest.eu/wp-content/uploads//Tonkanese_shutterstock_1661671252-768x1024.jpg",
         "breed": "Tonkinese",
         "housetrained": "Yes",
         "age": "5",
-        "sex": "male",
+        "sex": "female",
         "temperament":"serious",
         "description": "Peter's all business over here. He loves to play protector of the house."
       },

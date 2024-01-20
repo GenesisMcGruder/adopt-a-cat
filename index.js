@@ -1,4 +1,7 @@
-document.addEventListener("DOMContentLoaded", ()=> console.log("CONNECTED!!!"))
+document.addEventListener("DOMContentLoaded", ()=> {
+    loadCats();
+});
+
 
 function showOneCat(cat){
     let card = document.createElement('div')
@@ -32,12 +35,26 @@ function showOneCat(cat){
         }
         firstEmoji = !firstEmoji
     })
+
+    const adoptbtn = card.querySelector('.btn')
+    adoptbtn.addEventListener("click", (e)=>{
+        alert("Thank you for showing interest. We will reach out to you shortly.")
+    })
+
+    const contactSellerBtn = card.querySelector('.btn.btn-outline')
+    contactSellerBtn.addEventListener('click', (e) =>(
+        alert("Have questions? Someone will reach out with any information you might need.")
+    ))
     document.querySelector('.cat-cards-grid').appendChild(card)
 }
 
 function loadCats() {
     fetch('http://localhost:3000/catData')
     .then(res=> res.json())
-    .then(catData => catData.forEach(cat=> showOneCat(cat)))
+    .then(catData => {
+        cats = catData.map(cat =>{
+            showOneCat(cat)
+            return {name:cat.name, breed:cat.breed, age:cat.age, housetrained:cat.housetrained, sex:cat.sex, temperament:cat.temperament}
+        });
+    });
 }
-loadCats();
