@@ -68,11 +68,8 @@ function searchCats() {
         console.log(cats)
         catsContainer.innerHTML = ""
          cats.forEach((cat) => 
-        { const isVisible = cat.name.toLowerCase().includes(value)
-        // cat.breed.includes(value) || 
+        { const isVisible = cat.name.toLowerCase().includes(value)||cat.breed.toLowerCase().includes(value)|| cat.temperament.toLowerCase().includes(value)
         // cat.age.includes(value) || 
-        // cat.sex.includes(value) || 
-        // cat.temperament.includes(value) || 
         // cat.housetrained.includes(value)
         if (isVisible){
             showOneCat(cat)
